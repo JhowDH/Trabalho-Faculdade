@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+}
+
+header {
+    background-color: #1f5f8b;
+    padding: 20px;
+    color: white;
+}
+
+header h1 {
+    margin-bottom: 15px;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    margin-bottom: 15px;
+}
+
+.card p {
+    margin-bottom: 10px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.campo label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.campo input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.campo input:focus {
+    outline: none;
+    border-color: #1f5f8b;
+}
+
+.campo small {
+    display: block;
+    margin-top: 5px;
+    color: #d93025;
+    font-size: 14px;
+}
+
+.campo input.erro {
+    border: 2px solid #d93025;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1f5f8b;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #174a6d;
+}
+
+#mensagem {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#mensagem.sucesso {
+    color: #188038;
+}
+.campo-senha {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.campo-senha input {
+    width: 100%;
+    padding-right: 45px;
+}
+
+.botao-senha {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    padding: 5px;
+
+    background: transparent;
+    color: #555;
+
+    border: none;
+
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+.botao-senha:hover {
+    background: transparent;
+    color: #1f5f8b;
+}
